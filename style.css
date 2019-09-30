@@ -1,0 +1,10 @@
+/* Theme PSB */
+
+/*    Header   */
+#header { position: relative; background: #000;  padding: 10px 0; }
+#header .logo { position: relative; padding: 15px; }
+#header .logo img { width: 40%; }
+#header .title { padding: 10px; }
+#header .title h1 { color: #fff; line-height: 50px; font-size: 40px; padding: 25px 0; }
+
+#navigation { position: relative; }
