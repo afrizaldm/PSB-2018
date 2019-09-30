@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSB | SMA MUHAMMADIYAH PONOROGO</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-md-3">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="title col-md-9">
+                    <h1>PSB SMA MUHAMMADIYAH PONOROGO</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">PSB</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pengumuman</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cek Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="page" class="registrasi">
+        <div class="container">
+            <div class="row">
+                <div class="content col-md-8">
+                    <h1>FORMULIR PENDAFTARAN</h1>
+                    <form action="simpan-reg.php" method="POST">
+                        <div class="form-group">
+                            <h2>Data Pribadi</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <textarea class="form-control" id="alamat" placeholder="Alamat"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="kota">Kota</label>
+                            <input type="text" class="form-control" id="kota" placeholder="Kota">
+                        </div>
+                        <div class="form-group">
+                            <label for="tempatlahir">Tempat Lahir</label>
+                            <input type="text" class="form-control" id="tempatlahir" placeholder="Tempat Lahir">
+                        </div>
+                        <div class="form-group">
+                            <label for="tgl_lahir">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="tgl_lahir" placeholder="Tanggal Lahir">
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Jenis Kelamin</label>
+                            <select class="form-control" id="jk" name="jk">
+                                <option value="">- Pilih Jenis Kelamin -</option>
+                                <option value="Laki-Laki">Laki-Laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nama">Agama</label>
+                            <select class="form-control" id="agama" name="agama">
+                                <option value="">- Pilih Agama -</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghuchu">Konghuchu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hp">No HP</label>
+                            <input type="text" class="form-control" id="hp" placeholder="No HP">
+                        </div>
+                        <div class="form-group">
+                            <h2>Orang Tua</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="nama_wali">Nama Wali</label>
+                            <input type="text" class="form-control" id="nama_wali" placeholder="Nama Wali">
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat_wali">Alamat Wali</label>
+                            <textarea class="form-control" id="alamat_wali" placeholder="Alamat Wali"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="kota_wali">Kota Wali</label>
+                            <input type="text" class="form-control" id="kota_wali" placeholder="Kota Wali">
+                        </div>
+                        <div class="form-group">
+                            <label for="telp_wali">Telepon Wali</label>
+                            <input type="text" class="form-control" id="telp_wali" placeholder="Telepon Wali">
+                        </div>
+                        <div class="form-group">
+                            <label for="pekerjaan_wali">Pekerjaan Wali</label>
+                            <input type="text" class="form-control" id="pekerjaan_wali" placeholder="Pekerjaan Wali">
+                        </div>
+                        <div class="form-group">
+                            <h2>Pendidikan</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="asal_sekolah">Asal Sekolah</label>
+                            <input type="text" class="form-control" id="asal_sekolah" placeholder="Asal Sekolah">
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat_sekolah">Alamat Sekolah</label>
+                            <textarea class="form-control" id="alamat_sekolah" placeholder="Alamat Sekolah"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="nem">NEM</label>
+                            <input type="text" class="form-control" id="nem" placeholder="NEM">
+                        </div>
+                        <button type="submit" class="btn btn-danger">DAFTAR</button>
+                    </form>
+                </div>
+                <div class="sidebar col-md-4">
+                    <div class="widget">
+                        <h2>Download</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Brosur</a>
+                            </li>
+                            <li>
+                                <a href="#">Persyaratan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            Copyright &#169; SMA MUHAMMADIYAH PONOROGO
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

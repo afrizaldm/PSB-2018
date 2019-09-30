@@ -7,4 +7,21 @@
 #header .title { padding: 10px; }
 #header .title h1 { color: #fff; line-height: 50px; font-size: 40px; padding: 25px 0; }
 
-#navigation { position: relative; }
+#navigation { position: relative; background: #970101; }
+#navigation .navbar-brand  { color: #ffff00; font-weight: bold; }
+#navigation .nav-item a { color: #fff; }
+
+#page { position: relative; padding: 25px 0; }
+#page.homepage .content h1 { position: relative; font-size: 30px; color: #970101; }
+#page.homepage .content p { position: relative; font-size: 18px; line-height: 1.5; text-align: justify; }
+
+#page .sidebar { position: relative; }
+#page .sidebar .widget { position: relative; margin-bottom: 15px; }
+#page .sidebar .widget h2 { position: relative; font-size: 22px; color: #222; text-transform: uppercase; }
+#page .sidebar .widget ul { list-style-type: none; margin: 0; padding: 0; }
+#page .sidebar .widget .btn { font-size: 25px; padding: 10px 15px; width: 100%; }
+
+#page.registrasi h1 { position: relative; font-size: 30px; color: #970101; }
+#page.registrasi form h2 { position: relative; font-size: 22px; background: #970101; color: #fff; padding: 10px 15px; }
+
+#footer { position: relative; background: #000; color: #ffff00; padding: 15px 0; }
