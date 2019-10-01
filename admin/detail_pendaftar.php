@@ -124,7 +124,7 @@
                         </div>
                         <div class="form-group">
                             <label for="alamat_sekolah">Alamat Sekolah</label>
-                            <textarea value="<?php echo $row['alamat_sekolah'] ?>" class="form-control" name="alamatSekolah" id="alamat_sekolah" placeholder="Alamat Sekolah"></textarea>
+                            <textarea value="<?php echo $row['alamat_sekolah'] ?>" class="form-control" name="alamatSekolah" id="alamat_sekolah" placeholder="Alamat Sekolah"><?php echo $row['alamat_sekolah'] ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="nem">NEM</label>

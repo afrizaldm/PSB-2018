@@ -37,7 +37,11 @@
                                 <td><?php echo $row['jenis_kelamin'] ?></td>
                                 <td><?php echo $row['nilai_akhir'] ?></td>
                                 <td>
-                                    <a href="action/terima.php?id=<?php echo $row['id'] ?>" class="btn btn-primary">Terima</a>
+                                    <?php if($row['status'] != 1) { ?>
+                                        <a href="action/terima.php?id=<?php echo $row['id'] ?>&status=<?php echo $row['status'] ?>" class="btn btn-primary">Terima</a>
+                                    <?php } else { ?>
+                                        <a href="action/terima.php?id=<?php echo $row['id'] ?>&status=<?php echo $row['status'] ?>" class="btn btn-success">Keluarkan</a>
+                                    <?php } ?>
                                     <a href="action/hapus.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
