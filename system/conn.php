@@ -3,6 +3,6 @@
 $username = "root";
 $password = "";
 $hostname = "localhost";
-$database = "";
+$database = "pendaftaran_online";
 
-$dbh = new PDO("mysql:host=$hostname;dbname=$database",$username,$password);
+$db = new PDO("mysql:host=$hostname;dbname=$database",$username,$password);

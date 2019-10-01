@@ -15,16 +15,19 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['password'])){
     {
         if($stmt->rowCount() > 0)
         {
-            echo [ 'status' => true, 'mess' => 'Selamat!!! Login Berhasil'];
+            $_SESSION['nik'] = $stmt[0]['nik'];
+            $_SESSION['nama'] = $stmt[0]['nama'];
+            $_SESSION['username'] = $stmt[0]['username'];
+            header('Location:./admin/index.php/status=success&mess=Selamat datang kembali');
         }
         else
         {
-            echo [ 'status' => false, 'mess' => 'Username atau Password yang anda masukan salah'];
+            header('Location:./admin/login/index.php/status=error&mess=Username atau password yang ada masukan salah');
         }
     }
     else
     {
-        echo [ 'status' => false, 'mess' => 'maaf sedang terjadi kesalahan'];
+        header('Location:./admin/login.php/status=error&mess=Selamat datang kembali');
     }
 
 }
