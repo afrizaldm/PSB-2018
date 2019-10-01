@@ -41,7 +41,7 @@
                             <a class="nav-link" href="#">Pengumuman</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cek Data</a>
+                            <a class="nav-link" href="cek.php">Cek Data</a>
                         </li>
                     </ul>
                 </div>

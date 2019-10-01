@@ -20,6 +20,7 @@ $alamatSekolah = $_POST['alamatSekolah'];
 $nem = $_POST['nem'];
 
 $params = [
+    ':no' => "",
     ':name' => $name,
     ':kota' => $kota,
     ':alamat' => $alamat,
@@ -39,7 +40,7 @@ $params = [
 ];
 
 try {
-    $sql = "INSERT INTO tb_pendaftaran ( id, tgl, nama_lengkap, kota, alamat, tempat_lahir, tanggal_lahir, jenis_kelamin, agama, no_hp, nama_wali, kota_wali, alamat_wali, telp_wali, pekerjaan_wali, asal_sekolah, alamat_sekolah, nilai_akhir) VALUES (null, CURDATE(), :name, :kota, :alamat, :tempatLahir, :tglLahir, :jk, :agama, :noHp, :namaWali,:kotaWali, :alamatWali, :telpWali, :pekerjaanWali, :asalSekolah, :alamatSekolah, :nem)";
+    $sql = "INSERT INTO tb_pendaftaran ( id, no, tgl, nama_lengkap, kota, alamat, tempat_lahir, tanggal_lahir, jenis_kelamin, agama, no_hp, nama_wali, kota_wali, alamat_wali, telp_wali, pekerjaan_wali, asal_sekolah, alamat_sekolah, nilai_akhir) VALUES (null, :no, CURDATE(), :name, :kota, :alamat, :tempatLahir, :tglLahir, :jk, :agama, :noHp, :namaWali,:kotaWali, :alamatWali, :telpWali, :pekerjaanWali, :asalSekolah, :alamatSekolah, :nem)";
     $stmt = $db->prepare($sql);
     $stmt->execute($params);
 
