@@ -1,0 +1,12 @@
+{
+    "name": "wearnes/psb",
+    "authors": [
+        {
+            "name": "Ardi Yoto",
+            "email": "ardiyoto@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0"
+    }
+}

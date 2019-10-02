@@ -26,7 +26,7 @@
                         <tbody>
                             <?php while ($row = $stmt->fetch()) { ?>
                             <tr>
-                                <th scope="row"><a href="admin/detail_pendaftar.php"><?php echo $row['no'] ?></a></th>
+                                <th scope="row"><?php echo $row['no'] ?></th>
                                 <td><?php echo $row['nama_lengkap'] ?></td>
                                 <td><?php echo $row['asal_sekolah'] ?></td>
                                 <td><?php echo $row['nilai_akhir'] ?></td>
