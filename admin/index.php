@@ -32,16 +32,13 @@
                 </div>
                 <div class="sidebar col-md-4">
                     <div class="widget">
-                        <a href="frm-registrasi.php" class="btn btn-danger">DAFTAR SEKARANG</a>
-                    </div>
-                    <div class="widget">
                         <h2>Download</h2>
                         <ul>
                             <li>
-                                <a href="#">Brosur</a>
+                                <a href="admin/pendaftar.php">Data Pendaftar</a>
                             </li>
                             <li>
-                                <a href="#">Persyaratan</a>
+                                <a href="admin/terdaftar.php">Data Diterima</a>
                             </li>
                         </ul>
                     </div>

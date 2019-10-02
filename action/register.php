@@ -19,8 +19,11 @@ $asalSekolah = $_POST['asalSekolah'];
 $alamatSekolah = $_POST['alamatSekolah'];
 $nem = $_POST['nem'];
 
+$datetime = new DateTime();
+$no = $datetime->format('YmdHis');
+
 $params = [
-    ':no' => "",
+    ':no' => "NP$no",
     ':name' => $name,
     ':kota' => $kota,
     ':alamat' => $alamat,
@@ -48,7 +51,7 @@ try {
     $cek = $db->prepare($sqlid);
     $cek->execute();
 
-    header('Location:./index.php');
+    header('Location:../index.php');
 } catch(Exception $e){
     $res = json_encode([ 'id'=>$id,'status' => true, 'mess' => 'Selamat!!! Registrasi Berhasil']);
 }

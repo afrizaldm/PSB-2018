@@ -35,15 +35,21 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="admin/index.php">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="admin/index.php">Dashboard <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=" admin/pendaftar.php">Pendaftar</a>
+                            <a class="nav-link" href=" admin/pendaftar.php">Data Pendaftar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="admin/terdaftar.php">Terdaftar</a>
+                            <a class="nav-link" href="admin/terdaftar.php">Data Diterima</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin/laporan.php">Laporan</a>
+                        </li>                        
                     </ul>
+                    <a href="action/logout.php">
+                        <button type="button" class="btn btn-dark">Log Out</button>
+                    </a>
                 </div>
             </nav>
         </div>

@@ -3,18 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="content col-md-8">
-                    <h1>SILAHKAN MASUK TERLEBIH DAHULU</h1>
+                    <h1>LOGIN</h1>
                     <form action="action/login.php" method="POST">
                         <div class="form-group">
-                            <h2>Data Pribadi</h2>
-                        </div>
-                        <div class="form-group">
                             <label for="nama">Username</label>
-                            <input type="text" name="username" class="form-control" id="nama" placeholder="Nama Lengkap">
+                            <input type="text" name="username" class="form-control" id="nama" placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Masukan Password">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-danger">MASUK</button>
                     </form>

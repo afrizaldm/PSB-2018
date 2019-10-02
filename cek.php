@@ -5,7 +5,7 @@
     {
         $no = $_POST['no'];
         $status = "MAAF PENDAFTARAN DENGAN NO $no BELUM DITERIMA";
-        $sql = "SELECT * FROM tb_pendaftaran WHERE no=:no";
+        $sql = "SELECT * FROM tb_pendaftaran WHERE no=:no AND status =1;";
         $stmt = $db->prepare($sql);
         $params = [
             'no' => $no
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="content col-md-8">
                     <h1>CEK PENDAFTARAN ANDA</h1>
-                    <form action="action/register.php" method="POST">
+                    <form action="cek.php" method="POST">
                         <div class="form-group">
                             <h2>Masukkan No Pendaftaran</h2>
                         </div>
