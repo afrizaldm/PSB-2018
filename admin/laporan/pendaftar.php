@@ -15,7 +15,7 @@ ob_start();
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet similique corrupti eum qui
         numquam, perspiciatis modi earum tempore labore alias sapiente quos ea repellendus repellat,
         libero nobis maiores reprehenderit vero.</p>
-    <table class="table table-hover">
+    <table border="1" class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">Nama</th>
@@ -42,5 +42,5 @@ ob_start();
 </div>
 <?php
 $content = ob_get_clean();
-$mpdf->WriteHTML('<h1>Hello world!</h1>');
+$mpdf->WriteHTML($content);
 $mpdf->Output();
